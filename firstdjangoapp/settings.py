@@ -21,6 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECRET_KEY = env('SECRET_KEY')
 SECRET_KEY = os.getenv("SECRET_KEY")
+print(SECRET_KEY)
 # SECRET_KEY = 'ico8yj=kl99+$1q=!ta=uypgrto=4kh=)e(y0uzze(bw&5weg%'
 
 # Quick-start development settings - unsuitable for production
