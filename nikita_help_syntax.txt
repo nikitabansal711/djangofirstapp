@@ -1,0 +1,26 @@
+python3 -m venv venv
+C:\firstdjangoapp\venv\Scripts\activate
+django-admin startproject <myproject_name>
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+pip3 install -r requirements.txt
+python manage.py runserver
+
+#to create new app
+python manange.py createapp <app_name>
+
+# Tools to sped up
+cls -  to clear screen
+ctrl shift +/-
+ctrlf shift F to search (but not working on your machine find it out)
+press ctrl and click on any variable/class/function to serach for all refrences inside the project
+always use alt Tab to navigate between desktop apps and [Arrow keys if  u want]
+directly click from error file on terminal to goto that line of eror, but not always you will get error line
+use debugger only and use this as play button
+hot reload is deafult on inside pycharm
+alt + click file to close all tabs
+file ki path dekhna hai to goto snack bar, and also you can see other file in that packages
+ctrl + alt + L / O
+library agar use ho rahah hai to usko req.txt me daalo with version like drf_yasg==5
+

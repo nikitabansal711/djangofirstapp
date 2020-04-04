@@ -1,0 +1,8 @@
+django
+djangorestframework
+drf-yasg
+python-dotenv
+collectstatic
+django-grappelli
+
+
