@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from article.models import Article
+from article.models import Article, Author
 
 
 class ArticleSerializer(serializers.Serializer):
@@ -20,3 +20,9 @@ class ArticleSerializer(serializers.Serializer):
 
         instance.save()
         return instance
+
+
+class AuthorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Author
+        fields = ('name', 'email')
