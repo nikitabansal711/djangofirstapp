@@ -4,5 +4,7 @@ drf-yasg
 python-dotenv
 collectstatic
 django-grappelli
+dj-email-url
+
 
 

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import dj_email_url
 
 # reading .env file
 from dotenv import load_dotenv
@@ -18,6 +19,9 @@ load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# email_config = dj_email_url.config()
+
 
 # SECRET_KEY = env('SECRET_KEY')
 SECRET_KEY = os.getenv("SECRET_KEY")
@@ -58,7 +62,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'template',
     'prettyprinted',
-
+    'myApp',
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [

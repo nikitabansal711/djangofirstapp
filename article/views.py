@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Article
 from .serializers import ArticleSerializer
+from django.template import RequestContext
 
 
 class ArticleView(APIView):
@@ -37,3 +38,4 @@ class ArticleView(APIView):
         article = get_object_or_404(Article.objects.all(), pk=pk)
         article.delete()
         return Response({"message": "Article with id `{}` has been deleted.".format(pk)}, status=204)
+
